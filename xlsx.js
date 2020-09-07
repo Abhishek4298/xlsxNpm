@@ -1,8 +1,8 @@
-var xlsx = require("xlsx");
+const xlsx = require("xlsx");
 
-var wb = xlsx.readFile("traineeRecord.xlsx");
+const wb = xlsx.readFile("traineeRecord.xlsx");
 
-var wSheet = wb.Sheets["Sheet1"];
+const wSheet = wb.Sheets["Sheet1"];
 
 let data = xlsx.utils.sheet_to_json(wSheet);
 
